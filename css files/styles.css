@@ -1,0 +1,15 @@
+body{
+    font-family: 'Bebas Neue', 'Arial' sans-serif;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
