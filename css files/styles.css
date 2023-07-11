@@ -1,3 +1,7 @@
+html{
+    height: 100%;
+}
+
 body{
     font-family: 'Bebas Neue', 'Arial' sans-serif;
     display: flex;
@@ -6,34 +10,37 @@ body{
     height: 100%;
 }
 
-.container{
-    width: 100%;
-    max-width: 1200px;
-    padding-right: 30px;
-    padding-left: 30px;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 .main-content{
     display: flex;
     flex-grow: 1;
 }
 
-/* HERO */
+.container{
+    width: 100%;
+    max-width: 1200px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 .container-wrapper-inner{
     display: flex;
+    padding-top: 50px;
 }
+
+
+/* HERO */
 .hero{
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100% auto;
     width: 50%;
-    height: auto;
+    height: 782px;
 }
 
 .hero-content{
@@ -66,6 +73,15 @@ body{
     border: 0;
 }
 
+.hero-link:hover{
+    opacity: 0.8;
+}
+
+
+.hero-link:active{
+    opacity: 0.6;
+}
+
 .hero-link-text{
     display: flex;
     font-size: 16px;
@@ -91,7 +107,9 @@ body{
 
 /* LATEST VIDEOS */
 .latest-videos{
-    padding:0;
+    display: flex;
+    flex-direction: column;
+    padding-left: 55px;
     margin: 0;
     width: 50%;
     height: auto;
@@ -112,7 +130,8 @@ body{
 
 .latest-videos-list{
     margin: 0;
-    margin-top: 24px;
+    padding: 0;
+    margin-bottom: 23px;
     display: flex;
     flex-direction: column;
 }
@@ -144,7 +163,95 @@ body{
     font-size: 18px;
     line-height: normal;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 2px;
     color: #222;
+}
+
+
+.latest-videos-item-link:hover{
+    color: #1e90ff;
+}
+
+.latest-videos-item-link:active{
+    color: #1e90ff;
+    opacity: 0.6;
+}
+
+.data-time{
+    display: flex;
+}
+
+.latest-videos-meta-item{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto Condensed', 'Arial', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 2px;
+    color:#888;
+    margin-top: 4px;
+}
+
+.latest-videos-meta-item-published{
+    display: flex;
+    margin-right: 24px;
+}
+
+.latest-videos-meta-item-published::before{
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/icons/icon-clock\ 1.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 4px;
+}
+
+.latest-videos-meta-item-views{
+    display: flex;
+}
+
+.latest-videos-meta-item-views::before{
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/icons/visibility_black_24dp\ 1.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 4px;
+}
+
+/* BUTTON DOWNLOAD AGAIN */
+.button-download-again{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 4px;
+    width: 100%;
+    border: 0;
+    cursor: pointer;
+}
+
+.button:hover{
+    opacity: 0.8;
+}
+
+.button:active{
+    opacity: 0.6;
+}
+
+.button-primary{
+    background-color: #1e90ff;
+    color: #fff;
+    font-family:'Roboto-Condensed', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: normal;
+    font-weight: 700;
 }
